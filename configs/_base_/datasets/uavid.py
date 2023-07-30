@@ -1,5 +1,5 @@
 dataset_type = 'UAVIdDataset'
-data_root = '/beifen/2/xuzhou/processed/'
+data_root = 'D:/Codes/Datasets/UAV/200/'
 crop_size = (1024, 1024)
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
@@ -20,21 +20,21 @@ train_pipeline = [
     dict(type='PackSegInputs')
 ]
 train_dataloader = dict(
-    batch_size=24,
-    num_workers=4,
+    batch_size=2,
+    num_workers=2,
     sampler=dict(type='InfiniteSampler', shuffle=True),
     dataset=dict(
         type=dataset_type,
         data_root=data_root,
         data_prefix=dict(
-            img_path='img_dir/train', seg_map_path='ann_dir/train'),
+            img_path='imgsFine/leftImg8bit/default', seg_map_path='gtFine/default'),
         pipeline=train_pipeline
     )
 )
 
 val_pipeline = [
     dict(type='LoadImageFromFile'),
-    dict(type='Resize', scale=(2048, 1024), keep_ratio=True),
+    dict(type='Resize', scale=(2048, 1024), keep_ratio=False),
     # add loading annotation after ``Resize`` because ground truth
     # does not need to do resize data transform
     dict(type='LoadAnnotations'),
@@ -52,8 +52,8 @@ val_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_prefix=dict(
-            img_path='img_dir/val',
-            seg_map_path='ann_dir/val'
+            img_path='imgsFine/leftImg8bit/val',
+            seg_map_path='gtFine/val'
         ),
         pipeline=val_pipeline))
 

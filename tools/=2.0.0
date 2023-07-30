@@ -1,0 +1,30 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple, http://mirrors.aliyun.com/pypi/simple/, https://pypi.tuna.tsinghua.edu.cn/simple/, http://pypi.mirrors.ustc.edu.cn/simple/
+Collecting mmcv
+  Downloading http://mirrors.aliyun.com/pypi/packages/ab/03/6c4fb70f2c547ab96cbf66a235aa4465631f77d045e57d84d941b3e66311/mmcv-2.0.1.tar.gz (469 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 469.5/469.5 kB 346.3 kB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: addict in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (2.4.0)
+Requirement already satisfied: mmengine>=0.3.0 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (0.7.4)
+Requirement already satisfied: numpy in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (1.21.6)
+Requirement already satisfied: packaging in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (22.0)
+Requirement already satisfied: Pillow in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (9.2.0)
+Requirement already satisfied: pyyaml in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (6.0)
+Requirement already satisfied: yapf in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmcv) (0.32.0)
+Requirement already satisfied: rich in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmengine>=0.3.0->mmcv) (13.4.2)
+Requirement already satisfied: matplotlib in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmengine>=0.3.0->mmcv) (3.5.2)
+Requirement already satisfied: opencv-python>=3 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmengine>=0.3.0->mmcv) (4.6.0.66)
+Requirement already satisfied: termcolor in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from mmengine>=0.3.0->mmcv) (1.1.0)
+Requirement already satisfied: cycler>=0.10 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from matplotlib->mmengine>=0.3.0->mmcv) (0.11.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from matplotlib->mmengine>=0.3.0->mmcv) (3.0.9)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from matplotlib->mmengine>=0.3.0->mmcv) (1.4.4)
+Requirement already satisfied: fonttools>=4.22.0 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from matplotlib->mmengine>=0.3.0->mmcv) (4.34.4)
+Requirement already satisfied: python-dateutil>=2.7 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from matplotlib->mmengine>=0.3.0->mmcv) (2.8.2)
+Requirement already satisfied: typing-extensions<5.0,>=4.0.0 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from rich->mmengine>=0.3.0->mmcv) (4.4.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from rich->mmengine>=0.3.0->mmcv) (2.15.1)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from rich->mmengine>=0.3.0->mmcv) (2.2.0)
+Requirement already satisfied: mdurl~=0.1 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from markdown-it-py>=2.2.0->rich->mmengine>=0.3.0->mmcv) (0.1.2)
+Requirement already satisfied: six>=1.5 in /home/bvision/anaconda3/envs/OpenPCDet/lib/python3.7/site-packages (from python-dateutil>=2.7->matplotlib->mmengine>=0.3.0->mmcv) (1.16.0)
+Building wheels for collected packages: mmcv
+  Building wheel for mmcv (setup.py): started
+  Building wheel for mmcv (setup.py): finished with status 'canceled'

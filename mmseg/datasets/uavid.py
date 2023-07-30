@@ -18,8 +18,8 @@ class UAVIdDataset(BaseSegDataset):
                 ])
 
     def __init__(self,
-                 img_suffix='.png',
-                 seg_map_suffix='.png',
+                 img_suffix='_leftImg8bit.png',
+                 seg_map_suffix='_gtFine_labelIds.png',
                  **kwargs) -> None:
         super().__init__(
             img_suffix=img_suffix, seg_map_suffix=seg_map_suffix, **kwargs)

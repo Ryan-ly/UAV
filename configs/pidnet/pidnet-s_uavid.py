@@ -4,7 +4,7 @@ _base_ = [
 ]
 
 # checkpoint_file = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/pidnet/pidnet-s_imagenet1k_20230306-715e6273.pth'  # noqa
-checkpoint_file = '/data_sda/Ly/weights/pidnet-s_2xb6-120k_1024x1024-cityscapes_20230302_191700-bb8e3bcc.pth'
+checkpoint_file = 'D:/Codes/Python/bvision/weights/iter_5000.pth'
 crop_size = (1024, 1024)
 num_classes = 8
 data_preprocessor = dict(

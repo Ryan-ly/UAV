@@ -61,7 +61,7 @@ val_evaluator = dict(type='IoUMetric', iou_metrics=['mIoU'])
 
 test_pipeline = [
     dict(type='LoadImageFromFile'),
-    dict(type='Resize', scale=(2048, 1024), keep_ratio=True),
+    dict(type='Resize', scale=(2048, 1024), keep_ratio=False),
     # add loading annotation after ``Resize`` because ground truth
     # does not need to do resize data transform
     # dict(type='LoadAnnotations'),
@@ -78,7 +78,7 @@ test_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_prefix=dict(
-            img_path='img_dir/test2',
+            img_path='imgsFine/leftImg8bit/val',
         ),
         pipeline=test_pipeline))
 

@@ -21,6 +21,11 @@ def main():
         help='Opacity of painted segmentation map. In (0, 1] range.')
     parser.add_argument(
         '--title', default='result', help='The image identifier.')
+    # args = parser.parse_args(['D:/Codes/Datasets/UAV/200/imgsFine/leftImg8bit/val/seq1_000000_leftImg8bit.png',
+    #                           'D:/Codes/python/bvision/mmseg/configs/pidnet/pidnet-s_uavid.py',
+    #                           'D:/Codes/python/bvision/weights/iter_5000.pth',
+    #                         #   '--out-file','D:/Codes/python/bvision/logs/demo/demo1.png'
+    #                           ])
     args = parser.parse_args()
 
     # build the model from a config file and a checkpoint file
